@@ -8,7 +8,7 @@ document.getElementById('mybut').addEventListener("click",(event)=>{
 
     }).then((data)=>{
         
-        document.getElementById("d2j").innerHTML = `
+        document.getElementById("stuff").innerHTML = `
 
 
         <p>Activity: ${data.activity}</p>

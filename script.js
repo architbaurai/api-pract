@@ -7,21 +7,19 @@ document.getElementById('mybut').addEventListener("click",(event)=>{
         return response.json();
 
     }).then((data)=>{
-        
-        document.getElementById("stuff").innerHTML = `
 
+	    	console.log("connection established!");
 
-        <p>Activity: ${data.activity}</p>
+        	document.getElementById("stuff").innerHTML = `
 
-        <p>Type: ${data.type}</p>
+		<p>Activity: ${data.activity}</p>
 
-        <p>Participants required: ${data.participants}</p>
+        	<p>Type: ${data.type}</p>
 
-        <p>Price: ${data.price}</p>
+        	<p>Participants required: ${data.participants}</p>
 
-        <p>Accessibility: ${data.accessibility}</p>
+        	<p>Price: ${data.price}</p>
 
-        `
-
+        	<p>Accessibility: ${data.accessibility}</p>`
     })
 })
